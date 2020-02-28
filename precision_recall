@@ -142,7 +142,7 @@ plt.subplot(1,2,1)
 max_f1_cero=max(f1_cero)
 max_p_cero=threshold_cero[np.where(f1_cero==max(f1_cero))]
 plt.plot(threshold_cero,f1_cero[:-1],label='ceros')
-plt.plot(max_p,max_f1,'ro',markersize=10)
+plt.plot(max_p_cero,max_f1_cero,'ro',markersize=10)
 plt.plot(threshold_uno,f1_uno[:-1],label='unos')
 plt.plot(max_p_uno,max_f1_uno,'ro',markersize=10)
 plt.xlabel('Probabilidad')
